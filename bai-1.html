@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>In dãy Fibonaci</h1> <br>
+<script>
+    let a=0;
+    let b=1;
+    let c=a+b;
+    let d='';
+    for (let i = 0; i < 20; i++) {
+        d = d + a +', ';
+        console.log(d);
+        c = a +b ;
+        console.log(c);
+        a = b;
+        console.log(b);
+        b=c;
+        console.log(a);
+    }
+    document.write(d);
+</script>
+</body>
+</html>

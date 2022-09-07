@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inputNumber" placeholder="Input Number">
+<button value="tinhGiaithua" onclick="tinh()">Tính</button>
+<p id="hienThi"></p>
+<script>
+    function tinh(){
+        let n=+document.getElementById('inputNumber').value;
+        let result= 1;
+        for (let i = 1; i <= n; i++) {
+            result = result*i;
+            console.log(result);
+        }
+        document.getElementById('hienThi').innerHTML= result;
+    }
+</script>
+</body>
+</html>
